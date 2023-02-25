@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAWKEYE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo"><img src="images/logo2.png" alt="HAWKEYE" width="100px"> </a>
+            <div class="nav-link" id="navLink">
+                <!-- menu tuşu eklenecek -->
+                <span class="material-symbols-outlined side" onclick="hideMenu()">
+                    close
+                </span>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PROFIL</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+            <span class="material-symbols-outlined side" onclick="showMenu()">
+                menu
+            </span>
+        </nav>
+        <div class="text-box">
+            <h1>HAWKEYE</h1>
+            <p>"Okay, look, the city is flying, we're fighting an army of robots... and I have a bow and arrow. None of
+                this makes sense. But I'm going back out there because it's my job."</p>
+            <p> ―Hawkeye to Wanda Maximoff[src]</p>
+            <a href="#" class="hero-btn">Ayrıntılar için tıklayın</a>
+        </div>
+    </header>
+    <section class="products">
+        <div class="row">
+            <div class="products-sol">
+                <img src="images/5.jpg" alt="HAWKEYE">
+            </div>
+            <div class="products-sag">
+                <h2>HAWKEYE</h2>
+                <p>An expert marksman and fighter, Clint Barton puts his talents to good use by working for S.H.I.E.L.D.
+                    as a special agent. The archer known as Hawkeye also boasts a strong moral compass that at times
+                    leads him astray from his direct orders.</p>
+                    <a href="#" class="hero-btn2">Read Profile</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <h4>HAWKEYE</h4>
+        <p>"JUST CAN'T SEEM TO MISS."</p>
+        <div class="icons">
+            
+            
+                    <p> Coded with <span style="color: red; font-size: 25px;"> &#10084 </span> by Fatih <a href="mailto:fosmarttv@gmail.com"><span class="material-symbols-outlined icon">
+                        mail
+                    </span></a></p>
+                
+            <!-- <p>Coded with <span><p> Coded with <span> &#10084 </span> by <a href="#"> Fatih </a></p></span></p> -->
+
+        </div>
+    </footer>
+
+
+    <script>
+        function hideMenu() {
+            document.getElementById('navLink').style.right = '-200px';
+        }
+        function showMenu() {
+            document.getElementById('navLink').style.right = '0px';
+        }
+    </script>
+</body>
+
+</html>
